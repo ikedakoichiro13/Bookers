@@ -1,3 +1,5 @@
 <p id="notice">Book was successfully created</p>
-<h4>Title:</h4><p><%= book.title %></p>
-<h4>Body:</h4><p><%= book.body %></p>
+<h4>Title:</h4><p><%= @book.title %></p>
+<h4>Body:</h4><p><%= @book.body %></p>
+
+<a class="edit" href="<%= edit_book_path(@book.id) %>">Edit</a><a>|</a><td><a class="index" href="<%= book_path(@book.id) %>">Back</a>
