@@ -20,7 +20,7 @@
       <td><%= book.body %></td>
 
       <% if book.present? %>
-      <td><a class="edit" href="<%= book_path(book.id) %>">Show</a></td>
+      <td><a class="show" href="<%= book_path(book.id) %>">Show</a></td>
       <td><a class="edit" href="<%= edit_book_path(book.id) %>">Edit</a></td>
       <td><a class="destroy" href="<%= book_path(book.id) %>" data-method="delete" data-confilm="Are you sure?">Destroy</a></td>
       <% end %>
