@@ -9,4 +9,4 @@
     <%= f.submit 'Update Book' %>
   <% end %>
 
-  <a class="show" href="<%= book_path(@book.id) %>">Show</a><a>|</a><a class="back" href="/books">Back</a>
+  <%= link_to "Show", book_path(@book.id) %> <a>|</a> <%= link_to "Back", books_path %>
